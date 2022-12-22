@@ -2,8 +2,6 @@
 <html lang="pt-br">
 
 <head>
-    <title>BRGGames</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,22 +10,51 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-
     <title>BRGGames | Página Principal</title>
 
 </head>
 
 <body>
+    <header class="header">
+        <div class="header-auxiliary d-none d-lg-block">
+            <div class="container">
+                <div class="col-4">
+                    <nav class="nav-social">
+
+                        <a class="nav-social__link blank" href="https://twitter.com" aria-label="Twitter">
+                            <i class="bi-twitter" style="font-size: 25px; line-height: 25px;"></i>
+                        </a>
+
+                        <a class="nav-social__link blank" href="https:linkedin/aelso-r-brito" aria-label="Twitter">
+                            <i class="bi-linkedin" style="font-size:25px; line-height: 25px;"></i>
+                        </a>
+
+                        <a class="nav-social__link blank" href="https://www.instagram.com/britoaelso/"
+                            aria-label="Twitter">
+                            <i class="bi-instagram" style="font-size:25px; line-height:25px;"></i>
+                        </a>
+
+                        <a class="nav-social__link blank" href="https://www.github.com/Aelso" aria-label="Twitter">
+                            <i class="bi-github" style="font-size:25px; line-height:25px;"></i>
+                        </a>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
     <div class="d-flex flex-column wrapper">
         <nav class="navbar navbar-expand-lg navbar-dark border-bottom shadow-sm mb-3"
             style="background-color: #20c987;">
@@ -69,6 +96,7 @@
                 </div>
             </div>
         </nav>
+
         <div class="container">
             <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -90,290 +118,298 @@
                         <img src=" /assets/img/slides/slide03.jpg" class="d-none d-md-block w-100" alt="">
                         <img src=" /assets/img/slides/slide03.jpg" class="d-block d-md-none  w-100" alt="">
                     </div>
-               
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src=" /assets/img/slides/slide04.jpg" class="d-none d-md-block w-100" alt="">
-                    <img src=" /assets/img/slides/slide04.jpg" class="d-block d-md-none  w-100" alt="">
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src=" /assets/img/slides/slide04.jpg" class="d-none d-md-block w-100" alt="">
+                        <img src=" /assets/img/slides/slide04.jpg" class="d-block d-md-none  w-100" alt="">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
                 </div>
-                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
+                <hr class="mt-3">
             </div>
-            <hr class="mt-3">
+
+
+            <main class="flex-fill">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                                <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                                    <button class="btn btn-danger">Buscar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                                <form class="d-inline-block">
+                                    <select class="form-select form-select-sm">
+                                        <option>Ordenar pelo nome</option>
+                                        <option>Ordenar pelo menor preço</option>
+                                        <option>Ordenar pelo maior preço</option>
+                                    </select>
+                                </form>
+                                <nav class="d-inline-block me-3">
+                                    <ul class="pagination pagination-sm my-0">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">4</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">5</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">6</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr mt-3>
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                                <a href="/produto.html">
+                                    <img src="/assets/img/produtos/ds.png" class="card-img-top">
+                                </a>
+                                <div class="card-header">
+                                    R$ 149,50
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Demon's Souls - PS5</h5>
+                                    <p class="card-text truncar-3l">
+                                        Demon's Souls é um jogo eletrônico de RPG de ação desenvolvido pela Bluepoint
+                                        Games, com a assistência da Japan Studio, e publicado pela Sony Interactive
+                                        Entertainment.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                        Adicionar ao Carrinho
+                                    </a>
+                                    <small class="text-success">400 unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                                <img src="/assets/img/produtos/gowr+co.jpg" class="card-img-top">
+                                </a>
+                                <div class="card-header">
+                                    R$ 349,50
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">God of War Ragnarök + controle - PS5</h5>
+                                    <p class="card-text truncar-3l">
+                                        God of War Ragnarök é um jogo eletrônico de ação-aventura desenvolvido
+                                        pela Santa Monica Studio e publicado pela Sony Interactive Entertainment
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                        Adicionar ao Carrinho
+                                    </a>
+                                    <small class="text-success">400 unidades</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                                <img src="/assets/img/produtos/tlou2.jpg" class="card-img-top">
+                                </a>
+                                <div class="card-header">
+                                    R$ 349,50
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">The Last of Us Part I - PS5</h5>
+                                    <p class="card-text truncar-3l">
+                                        The Last of Us Part I é um jogo eletrônico de ação-aventura desenvolvido pela
+                                        Naughty Dog. <br>
+                                        publicado pela Sony Interactive Entertainment. <br>
+                                        <br>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                        Adicionar ao Carrinho
+                                    </a>
+                                    <small class="text-success">200 unidades</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                                <img src="/assets/img/produtos/unc.jpg" class="card-img-top">
+                                </a>
+                                <div class="card-header">
+                                    R$ 59,50
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Uncharted Legacy of Thieves Collection - PS5</h5>
+                                    <p class="card-text truncar-3l">
+                                        Uncharted: Legacy of Thieves Collection é um jogo eletrônico de ação-aventura
+                                        desenvolvido pela Naughty Dog. <br>
+                                        <br>
+                                        <br>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                        Adicionar ao Carrinho
+                                    </a>
+                                    <small class="text-success">200 unidades</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                                <img src="/assets/img/produtos/hfw.jpg" class="card-img-top">
+                                </a>
+                                <div class="card-header">
+                                    R$ 249,50
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Horizon Forbidden West - PS5</h5>
+                                    <p class="card-text truncar-3l">
+                                        Horizon Forbidden West é um jogo eletrônico de RPG de ação
+                                        desenvolvido pela Guerrilla Games e publicado pela Sony Interactive
+                                        Entertainment.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                        Adicionar ao Carrinho
+                                    </a>
+                                    <small class="text-success">400 unidades</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                            <div class="card text-center bg-light">
+                                <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                    <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                                </a>
+                                <img src="/assets/img/produtos/md.jpg" class="card-img-top">
+                                </a>
+                                <div class="card-header">
+                                    R$ 149,50
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title"> Metroid Dread</h5>
+                                    <p class="card-text truncar-3l">
+                                        Metroid Dread é um jogo eletrônico de ação-aventura desenvolvido pela
+                                        MercurySteam e
+                                        Nintendo, lançado para Nintendo Switch em 8 de outubro de 2021. O título é uma
+                                        sequência de Metroid Fusion
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
+                                        Adicionar ao Carrinho
+                                    </a>
+                                    <small class="text-success">400 unidades</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    </div>
+
+
+            </main>
+
+            <footer class="border-top text-muted bg-light">
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col-12 col-md-4 text-center">
+
+                            <a href="/privacidade.html" class="text-decoration-none text-dark">
+                                Política de Privacidade
+                            </a><br>
+
+                            <a href="/termos.html" class="text-decoration-none text-dark">
+                                Termos de Uso
+                            </a><br>
+
+                            <a href="/quemsomos.html" class="text-decoration-none text-dark">
+                                Quem Somos
+                            </a><br>
+
+                            <a href="/trocas.html" class="text-decoration-none text-dark">
+                                Trocas e Devoluções
+                            </a>
+                        </div>
+
+
+                        <div class="col-12 col-md-4 text-center">
+                            &copy; 2022 - Desenvolvido por Aelso Rocha Brito<br>
+                            Rua dos Bom, nº 1000º,Bairro dos Bonos, São Paulo
+                            CPNJ 99.999.999/0001-99<br>
+                        </div>
+
+                        <div class=" col-12 col-md-4 text-center">
+                            <a href="/contato.html" class="text-decoration-none text-dark">
+                                Contato
+                            </a><br>
+
+                            E-mail: <a href="mailto:vendas@brggames"
+                                class="text-decoration-none text-dark">vendas@brggames
+                            </a> <br>
+
+                            Telefone: <a href="phone: 11969696969">
+                                (11) 96969 - 6969
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
-
-        <main class="flex-fill">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-5">
-                        <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
-                            <div class="input-group input-group-sm">
-                                <input type="text" class="form-control" placeholder="Digite aqui o que procura">
-                                <button class="btn btn-danger">Buscar</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
-                            <form class="d-inline-block">
-                                <select class="form-select form-select-sm">
-                                    <option>Ordenar pelo nome</option>
-                                    <option>Ordenar pelo menor preço</option>
-                                    <option>Ordenar pelo maior preço</option>
-                                </select>
-                            </form>
-                            <nav class="d-inline-block me-3">
-                                <ul class="pagination pagination-sm my-0">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">4</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">5</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">6</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-
-                <hr mt-3>
-                <div class="row g-3">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="card text-center bg-light">
-                            <a href="#" class="position-absolute end-0 p-2 text-danger">
-                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
-                            </a>
-                            <a href="/produto.html">
-                                <img src="/assets/img/produtos/ds.png" class="card-img-top">
-                            </a>
-                            <div class="card-header">
-                                R$ 149,50
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Demon's Souls - PS5</h5>
-                                <p class="card-text truncar-3l">
-                                    Demon's Souls é um jogo eletrônico de RPG de ação desenvolvido pela Bluepoint
-                                    Games, com a assistência da Japan Studio, e publicado pela Sony Interactive
-                                    Entertainment.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
-                                <small class="text-success">400 unidades</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="card text-center bg-light">
-                            <a href="#" class="position-absolute end-0 p-2 text-danger">
-                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
-                            </a>
-                            <img src="/assets/img/produtos/gowr+co.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-header">
-                                R$ 349,50
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">God of War Ragnarök + controle - PS5</h5>
-                                <p class="card-text truncar-3l">
-                                    God of War Ragnarök é um jogo eletrônico de ação-aventura desenvolvido
-                                    pela Santa Monica Studio e publicado pela Sony Interactive Entertainment
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
-                                <small class="text-success">400 unidades</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="card text-center bg-light">
-                            <a href="#" class="position-absolute end-0 p-2 text-danger">
-                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
-                            </a>
-                            <img src="/assets/img/produtos/tlou2.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-header">
-                                R$ 349,50
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">The Last of Us Part I - PS5</h5>
-                                <p class="card-text truncar-3l">
-                                    The Last of Us Part I é um jogo eletrônico de ação-aventura desenvolvido pela
-                                    Naughty Dog. <br>
-                                    publicado pela Sony Interactive Entertainment. <br>
-                                    <br>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
-                                <small class="text-success">200 unidades</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="card text-center bg-light">
-                            <a href="#" class="position-absolute end-0 p-2 text-danger">
-                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
-                            </a>
-                            <img src="/assets/img/produtos/unc.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-header">
-                                R$ 59,50
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Uncharted Legacy of Thieves Collection - PS5</h5>
-                                <p class="card-text truncar-3l">
-                                    Uncharted: Legacy of Thieves Collection é um jogo eletrônico de ação-aventura
-                                    desenvolvido pela Naughty Dog. <br>
-                                    <br>
-                                    <br>
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
-                                <small class="text-success">200 unidades</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="card text-center bg-light">
-                            <a href="#" class="position-absolute end-0 p-2 text-danger">
-                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
-                            </a>
-                            <img src="/assets/img/produtos/hfw.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-header">
-                                R$ 249,50
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Horizon Forbidden West - PS5</h5>
-                                <p class="card-text truncar-3l">
-                                    Horizon Forbidden West é um jogo eletrônico de RPG de ação
-                                    desenvolvido pela Guerrilla Games e publicado pela Sony Interactive
-                                    Entertainment.
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
-                                <small class="text-success">400 unidades</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="card text-center bg-light">
-                            <a href="#" class="position-absolute end-0 p-2 text-danger">
-                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
-                            </a>
-                            <img src="/assets/img/produtos/md.jpg" class="card-img-top">
-                            </a>
-                            <div class="card-header">
-                                R$ 149,50
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"> Metroid Dread</h5>
-                                <p class="card-text truncar-3l">
-                                    Metroid Dread é um jogo eletrônico de ação-aventura desenvolvido pela MercurySteam e
-                                    Nintendo, lançado para Nintendo Switch em 8 de outubro de 2021. O título é uma
-                                    sequência de Metroid Fusion
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
-                                <small class="text-success">400 unidades</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer class="border-top text-muted bg-light">
-            <div class="container">
-                <div class="row py-3">
-                    <div class="col-12 col-md-4 text-center">
-
-                        <a href="/privacidade.html" class="text-decoration-none text-dark">
-                            Política de Privacidade
-                        </a><br>
-
-                        <a href="/termos.html" class="text-decoration-none text-dark">
-                            Termos de Uso
-                        </a><br>
-
-                        <a href="/quemsomos.html" class="text-decoration-none text-dark">
-                            Quem Somos
-                        </a><br>
-
-                        <a href="/trocas.html" class="text-decoration-none text-dark">
-                            Trocas e Devoluções
-                        </a>
-                    </div>
-
-
-                    <div class="col-12 col-md-4 text-center">
-                        &copy; 2022 - Desenvolvido por Aelso Rocha Brito<br>
-                        <a href="https://www.linkedin.com/in/aelso-r-brito/">
-                            Meu Linkedin</a><br>
-                        Rua dos Bom, nº 1000º,Bairro dos Bonos, São Paulo
-                        CPNJ 99.999.999/0001-99<br>
-                    </div>
-
-                    <div class=" col-12 col-md-4 text-center">
-                        <a href="/contato.html" class="text-decoration-none text-dark">
-                            Contato
-                        </a><br>
-
-                        E-mail: <a href="mailto:vendas@brggames" class="text-decoration-none text-dark">vendas@brggames
-                        </a> <br>
-
-                        Telefone: <a href="phone: 11969696969">
-                            (11) 96969 - 6969
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <!-- Bootstrap JS v5.2.1 -->
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS v5.2.1 -->
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
