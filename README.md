@@ -5,10 +5,8 @@
 🦉 **Atividade Prática – Projeto loja virtual com Bootstrap**
 
 
-* **Título da Prática**: Aplicação do uso do bootstrap, cards, carousel e imagens em um documento
-HTML🤔
-* **Objetivo**:  O aluno precisa identificar, codificar as propriedades disponíveis do bootstrap e aplicar em
-um documento HTML para reproduzir o site especificado🎯
+* **Título da Prática**: Utilização do Bootstrap, Cards, Carousel e Imagens em um Documento HTML🤔
+* **Objetivo**:  O objetivo dessa prática é ensinar ao aluno como utilizar as propriedades disponíveis do Bootstrap para criar um documento HTML que reproduza um site específico. Para isso, serão explorados recursos como Cards, Carousel e Imagens🎯
 * **Materiais, Métodos e Ferramentas**:🧙
 
 * [Framework web - Bootstrap](https://getbootstrap.com/)
